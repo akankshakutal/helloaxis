@@ -18,6 +18,7 @@ spring:
   cloud:
     bus:
       enabled: true
+      id: ${spring.application.name}:${spring.profiles.active}:${server.port}
     refresh:
       enabled: true
   kafka:
